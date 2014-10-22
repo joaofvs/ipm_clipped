@@ -13,6 +13,9 @@ html, body {
 	height: 100%;
 	
 }
+#nav{
+	font-family: 'Ubuntu', sans-serif;
+}
 .wrapper {
 	min-height: 100%;
 	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
@@ -64,7 +67,4 @@ html, body {
 }
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
-}
-.ubuntu{
-	font-family: 'Ubuntu', sans-serif;
 }
