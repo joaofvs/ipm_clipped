@@ -79,10 +79,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 footer{
-	text-align: right;
+	/*text-align: right;*/
 	margin-top: 20px;
 	padding: 10px;
 	color: white;
 	background-color: #b91773; 
+}
+.footer-right{
+	text-align: right;
+}
+.footer-center{
+	text-align: center;
 }
 /**************************************************/
