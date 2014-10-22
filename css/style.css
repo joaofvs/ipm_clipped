@@ -15,6 +15,10 @@
 	color:white;
 }
 
+#quicklinks{
+	list-style: none;
+}
+
 .dropdown-menu li a{
 	background-color:#b91773;
 	color:black;
@@ -25,7 +29,7 @@
 	left: auto;
 	background-color: #b91773;;
 }
-
+	
 
 .nav.nav-justified > li.dropdown.active.open > a,
 .nav.nav-justified > li.dropdown.active.open > ul.dropdown-menu a:hover
@@ -39,3 +43,4 @@
 .dropdown-menu>li>a:hover{
 	background-color: black;
 }
+
