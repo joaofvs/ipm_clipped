@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPM Login</title>
+
+    <!-- OWN CSS SCRIPT STYLE -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- GOOGLE FONTS UBUNTU-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container ubuntu">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-8"><img width="250" src="img/Logo-1.png"/></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4"><!--Left column --></div>
+          <div class="col-xs-6 col-sm-4">            
+            <!--Center column -->
+            <h1 id="logintitle">Login</h1>
+            <!--<table class="table table-bordered">-->
+              <form role="form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+                <!--should be a submit type button but the messages will not show-->
+                <button type="button" class="btn btn-default" onclick="login()">Sign in</button>
+                <p id="error"></p>
+              </form>
+              <script>
+                function login() {
+                    var user1 = "j.nguyen";
+                    var user2 = "fm.lopes";
+                    var pass = "1234";
+                    // Get the value of input field with id="username"
+                    var userInserted = document.getElementById("username").value;
+                    var passInserted = document.getElementById("password").value;
+                    
+                    if((userInserted == user1 || userInserted == user2) && passInserted == pass)
+                      document.getElementById("error").innerHTML = "Success login (REMOVE MESSAGE)";
+                    else{
+                      document.getElementById("error").innerHTML = "Incorrect or password, please try again. Contact the academic services for further help (REMOVE MESSAGE)";
+                      var x = document.getElementById("error");
+                      x.style.fontSize = "15px";           
+                      x.style.color = "red"; 
+                      document.getElementById("password").value = "";
+                    }
+                }
+              </script>
+            <!--</table>-->
+          </div>
+          <div class="col-xs-6 col-sm-4"><!--Right column --></div>  
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
