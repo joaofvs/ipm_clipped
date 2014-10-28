@@ -48,26 +48,6 @@
                 <button type="button" class="btn btn-default" onclick="login()">Sign in</button>
                 <p id="error"></p>
               </form>
-              <script>
-                function login() {
-                    var user1 = "j.nguyen";
-                    var user2 = "fm.lopes";
-                    var pass = "1234";
-                    // Get the value of input field with id="username"
-                    var userInserted = document.getElementById("username").value;
-                    var passInserted = document.getElementById("password").value;
-                    
-                    if((userInserted == user1 || userInserted == user2) && passInserted == pass)
-                      document.getElementById("error").innerHTML = "Success login (REMOVE MESSAGE)";
-                    else{
-                      document.getElementById("error").innerHTML = "Incorrect or password, please try again. Contact the academic services for further help (REMOVE MESSAGE)";
-                      var x = document.getElementById("error");
-                      x.style.fontSize = "15px";           
-                      x.style.color = "red"; 
-                      document.getElementById("password").value = "";
-                    }
-                }
-              </script>
             <!--</table>-->
           </div>
           <div class="col-xs-6 col-sm-4"><!--Right column --></div>  
@@ -78,5 +58,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+                function login() {
+                    var user1 = "j.nguyen";
+                    var user2 = "fm.lopes";
+                    var pass = "1234";
+                    // Get the value of input field with id="username"
+                    var userInserted = document.getElementById("username").value;
+                    var passInserted = document.getElementById("password").value;
+                    
+                    if((userInserted == user1 || userInserted == user2) && passInserted == pass)
+                      document.getElementById("error").innerHTML = "Success login (REMOVE MESSAGE)";
+					else{
+                      document.getElementById("error").innerHTML = "Incorrect or password, please try again. Contact the academic services for further help (REMOVE MESSAGE)";
+                      var x = document.getElementById("error");
+                      x.style.fontSize = "15px";           
+                      x.style.color = "red"; 
+                      document.getElementById("password").value = "";
+                    }
+                }
+              </script>
   </body>
 </html>
