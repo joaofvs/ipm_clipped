@@ -21,11 +21,16 @@
     <![endif]-->
   </head>
   <body>
+  <!-- START WRAPPER -->
   <div class="wrapper">
+    <!-- STARTS CONTAINER  -->
     <div class="container ubuntu">
+      <!-- LOGO -->
       <div class="row">
-        <div class="test col-xs-12 col-sm-6 col-lg-8"><img width="300" src="img/Logo-1.png" /></div>
-      </div>  
+        <div class="col-xs-12 col-sm-6 col-lg-8"><img width="300" src="img/Logo-1.png" /></div>
+      </div>
+      <!-- END LOGO -->
+      <!-- START NAVBAR -->  
       <div id="nav">
         <ul class="nav nav-justified">
           <li class="active"><a href="#">Home</a></li>
@@ -52,32 +57,52 @@
           <li><a href="#">Help and Support</a></li>
         </ul>
       </div>
-      <div class="row">
-        <div class="test col-xs-12 col-sm-6 col-lg-8">
-          <h1>News<br/> 
-          <small>1st Test IPM 24/10/14</small></h1>
-          <b>written by Teresa Romão at 01/10/14</b>
-          <h1><small>Prototype IPM 14/10/14</small></h1>
-          <b>written by Teresa Romão at 01/10/14</b>
-          <h1><small>2nd Test IPM 02/12/14</small></h1>
-          <b>written by Teresa Romão at 01/10/14</b>
-        </div>
-        <div class="col-xs-6 col-md-4">
-        <h1>Quicklinks</h1>
-        <p>
-          <ul id="quicklinks">
-            <li><a href="#">Manage My Courses</a></li>
-            <li><a href="#">See my Grades</a></li>
-            <li><a href="#">See my Current Courses</a></li>
-          </ul>
-        </p>
+      <!-- END NAVBAR -->
+      <!-- START MAIN CONTENT -->
+      <div id="main-content">
+        <div class="row">
+          <div class="test col-xs-12 col-sm-6 col-lg-8">
+            <h1>News<br/> 
+            <small>1st Test IPM 24/10/14</small></h1>
+            <b>written by Teresa Romão at 01/10/14</b>
+            <h1><small>Prototype IPM 14/10/14</small></h1>
+            <b>written by Teresa Romão at 01/10/14</b>
+            <h1><small>2nd Test IPM 02/12/14</small></h1>
+            <b>written by Teresa Romão at 01/10/14</b>
+          </div>
+          <div class="col-xs-6 col-md-4">
+          <h1>Quicklinks</h1>
+          <p>
+            <ul id="quicklinks">
+              <li><a href="#">Manage My Courses</a></li>
+              <li><a href="#">See my Grades</a></li>
+              <li><a href="#">See my Current Courses</a></li>
+            </ul>
+          </p>
+          </div>
         </div>
       </div>
+      <!-- END MAIN CONTENT -->
+      <!-- STICKY FOOTER -->
       <div class="push"></div>
-      <footer><b>FCT UNL Interaçao Pessoa-Manquin <span class="glyphicon glyphicon-copyright-mark"></span>2014</b></footer>
+      <footer>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4">
+          FCT - Universidade Nova Lisboa
+        </div>
+        <div class="col-xs-6 col-sm-4 footer-center">
+          Interaçao Pessoa-Manquin 
+        </div>
+        <div class="col-xs-6 col-sm-4 footer-right">
+          <span class="glyphicon glyphicon-copyright-mark"></span>2014
+        </div>
+        </div>
+      </footer>
+      <!-- END OF STICKY FOOTER -->
     </div>
+    <!-- END CONTAINER -->
   </div>
-
+  <!-- END WRAPPER -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -85,5 +110,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- LESS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.0.0-b1/less.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
